@@ -1,0 +1,45 @@
+extends base.pug
+
+block scripts
+  script(src='/static/index.js')
+
+block style
+    style
+      include ../static/style.css
+
+block content
+    
+    section#introsection  
+        div Welcome to our Dance Academy
+        div.small Eat Dance sleep repeat
+
+    section#missionsection
+        h2 Our Mission
+        div.card
+            h3 Dance Perfection
+            div.card-box
+                div.card-img
+                    img(src="/static/img/1.png")
+                div.card-content
+                    p Witness the Best Dance Academy Ever!!  
+        div.card
+            h3 Dance is an ART
+            div.card-box
+                div.card-img
+                    img(src="/static/img/2.png")
+                div.card-content
+                    p Witness the Best Dance Academy Ever!!   
+        div.card
+            h3 Expert Teaching
+            div.card-box
+                div.card-img
+                    img(src="/static/img/3.png")
+                div.card-content
+                    p Witness the Best Dance Academy Ever!!
+    section#sponsersection  
+        h2 Our Sponsers
+        div#sponsers
+            img(src="/static/img/apple1.png", alt="Apple Logo", Class="spimage")
+            img(src="/static/img/bravesoft.png", alt="Bravesoft Logo", Class="spimage")
+            img(src="/static/img/google.png", alt="Google Logo", Class="spimage")
+            img(src="/static/img/microsoft.png", alt="Microsoft Logo", Class="spimage")
